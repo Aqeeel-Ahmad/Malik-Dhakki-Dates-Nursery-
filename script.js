@@ -120,7 +120,7 @@ const products = [
         unit: 'per box',
         rating: 4.9,
         reviews: 88,
-        img: 'https://images.unsplash.com/photo-1559181567-c3190ca9be46?w=600&auto=format&fit=crop',
+        img: 'images/Gift.jpg',
     },
     
 ];
@@ -378,7 +378,7 @@ function submitForm() {
     const phone = document.getElementById('fPhone').value.trim();
     const msg = document.getElementById('fMsg').value.trim();
     if (!name || !phone || !msg) { showToast('Please fill in required fields.'); return; }
-    const waMsg = `Hello Al-Nakheel Farms!\n\nName: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
+    const waMsg = `Hello Malik Dhakki Dates Nursery  Farms!\n\nName: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
     window.open('https://wa.me/923469892120?text=' + encodeURIComponent(waMsg), '_blank');
     showToast('Message sent via WhatsApp!');
 }
