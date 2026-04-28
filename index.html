@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Al-Nakheel Farms – Premium Date Plants & Organic Dates. Fresh Kanjor, Dry Chawara, and Date Plants sourced directly from the farm. Wholesale & Export available." />
+  <meta name="keywords"
+    content="date plants, kanjor, chawara, dry dates, fresh dates, date farm, wholesale dates, export dates" />
+  <title>Malik Dhakki Dates Nursery | Premium Date Plants & Organic Dates</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- ============================
+    NAVBAR
+============================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div class="logo-text">
+            <span class="logo-main">Malik Dhakki Dates Nursery</span>
+            <span class="logo-sub">Premium Farms</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://wa.me/923469892120?text=Assalamu Alaikum! I want to order dates from Malik Dhakki Dates Nursery" target="_blank" class="btn-outline"
+            style="padding:10px 20px;font-size:0.85rem;">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <button class="cart-btn" onclick="toggleCart()">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" onclick="toggleMobileNav()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="mobile-nav-logo">
+      <div class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="logo-text">
+          <span class="logo-main">Malik Dhakki Dates Nursery</span>
+          <span class="logo-sub">Premium Farms</span>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#home" onclick="toggleMobileNav()">Home</a>
+      <a href="about.html" onclick="toggleMobileNav()">About Us</a>
+      <a href="services.html" onclick="toggleMobileNav()">Services</a>
+      <a href="gallery.html" onclick="toggleMobileNav()">Gallery</a>
+      <a href="contact.html" onclick="toggleMobileNav()">Contact</a>
+    </nav>
+  </div>
+  <div class="cart-overlay" id="mobileNavOverlay" onclick="toggleMobileNav()" style="z-index:1040;"></div>
+
+  <!-- ============================
+    HERO
+============================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="container hero-content" style="width:100%;">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-tag">
+            <span class="tag"><i class="fa-solid fa-circle-check"></i> 100% Organic & Farm Fresh</span>
+          </div>
+          <h1 class="hero-headline">
+            Premium Date Plants &<br /><span class="gold">Organic Dates</span>
+            <span class="urdu" style="font-family: Noto Nastaliq Urdu; font-size: 33px;">مستقیم فارم سے — براہ راست کھیت سے آپ تک</span>
+          </h1>
+          <p class="hero-desc">
+            Discover the finest Kanjor plants, fresh Kanjor dates, and premium Chawara. Sourced directly from our farm —
+            for farmers, wholesalers, exporters, and retail customers.
+          </p>
+          <span class="urdu" style="font-family: Noto Nastaliq Urdu; font-size: larger; color: whitesmoke; padding-bottom: 70px;">کھجور کے بہترین پودے، تازہ کھجوریں اور پریمیم کوالٹی کا چھورا دریافت کریں۔ ہمارے فارم سے براہ راست ماخذ -
+            کسانوں،حول سیل کے لیے اور اپنے اســــتمال کے لیے۔</span>
+          <div class="hero-actions">
+            <a href="#products" class="btn-primary">
+              <i class="fa-solid fa-basket-shopping"></i> Order Now
+            </a>
+            <a href="https://wa.me! I want to order dates from Malik Dhakki Dates Nursery" target="_blank"
+              class="btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Contact on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-main-img">
+            <img src="images/Main_hero.jpeg" alt="Date palm farm" loading="lazy" />
+            <div class="hero-img-overlay"></div>
+          </div>
+          <div class="hero-badge hero-badge-1">
+            <div class="hero-badge-icon green"><i class="fa-solid fa-seedling"></i></div>
+            <div class="hero-badge-text">
+              <span class="hero-badge-value">5000+ Plants</span>
+              <span class="hero-badge-label">Available Now</span>
+            </div>
+          </div>
+          <div class="hero-badge hero-badge-2">
+            <div class="hero-badge-icon gold"><i class="fa-solid fa-star"></i></div>
+            <div class="hero-badge-text">
+              <span class="hero-badge-value">4.5 / 5.0</span>
+              <span class="hero-badge-label">Customer Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+     TRUST BAR
+============================= -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-item reveal">
+          <i class="fa-solid fa-shield-halved trust-icon"></i>
+          <div class="trust-text">
+            <span class="trust-title">Certified Organic</span>
+            <span class="trust-desc">No pesticides, 100% natural</span>
+          </div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item reveal delay-1">
+          <i class="fa-solid fa-truck-fast trust-icon"></i>
+          <div class="trust-text">
+            <span class="trust-title">Fast Delivery</span>
+            <span class="trust-desc">Nationwide shipping available</span>
+          </div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item reveal delay-2">
+          <i class="fa-solid fa-wheat-awn trust-icon"></i>
+          <div class="trust-text">
+            <span class="trust-title">Farm Fresh</span>
+            <span class="trust-desc">Direct from our farmlands</span>
+          </div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item reveal delay-3">
+          <i class="fa-solid fa-boxes-stacked trust-icon"></i>
+          <div class="trust-text">
+            <span class="trust-title">Bulk & Wholesale</span>
+            <span class="trust-desc">Export quality packaging</span>
+          </div>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item reveal delay-4">
+          <i class="fa-solid fa-headset trust-icon"></i>
+          <div class="trust-text">
+            <span class="trust-title">24/7 Support</span>
+            <span class="trust-desc">WhatsApp & call support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+     NUMBERS
+============================= -->
+  <section class="numbers-section">
+    <div class="container">
+      <div class="numbers-grid">
+        <div class="number-item reveal">
+          <div class="number-val">30<span>+</span></div>
+          <div class="number-label">Years of Farming</div>
+        </div>
+        <div class="number-item reveal delay-1">
+          <div class="number-val">250<span>+</span></div>
+          <div class="number-label">Happy Customers</div>
+        </div>
+        <div class="number-item reveal delay-2">
+          <div class="number-val">50<span>+</span></div>
+          <div class="number-label">Export Cities</div>
+        </div>
+        <div class="number-item reveal delay-3">
+          <div class="number-val">100<span>%</span></div>
+          <div class="number-label">Organic Certified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+     PRODUCTS
+============================= -->
+  <section class="products-section section-pad" id="products">
+    <div class="container">
+      <div class="products-header">
+        <div class="tag reveal"><i class="fa-solid fa-store"></i> Our Products</div>
+        <h2 class="section-title reveal" style="margin-top:16px;">Premium <span>Date Products</span></h2>
+        <p class="section-subtitle reveal">From seedling to harvest — we offer the finest date plants and varieties
+          directly sourced from our farm.</p>
+        <div class="category-tabs">
+          <button class="tab-btn active" onclick="filterProducts('all',this)">All Products</button>
+          <button class="tab-btn" onclick="filterProducts('plant',this)">Date Plants</button>
+          <button class="tab-btn" onclick="filterProducts('fresh',this)">Fresh Dates</button>
+          <button class="tab-btn" onclick="filterProducts('dry',this)">Dry Dates</button>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+                  FOOTER
+              ============================= -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo logo">
+            <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="logo-text">
+              <span class="logo-main">Malik Dhakki Dates Nursery</span>
+              <span class="logo-sub">Premium Farms</span>
+            </div>
+          </div>
+          <p class="footer-desc">Rooted in tradition, grown with passion. We bring you the finest date plants and
+            organic dates directly from our farm to your doorstep.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/itsdhakkidates" class="social-btn"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/923469892120" target="_blank" class="social-btn"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Products</h4>
+          <ul class="footer-links">
+            <li><a href="#products"><i class="fa-solid fa-chevron-right"></i> Kanjor Plants</a></li>
+            <li><a href="#products"><i class="fa-solid fa-chevron-right"></i> Fresh Kanjor</a></li>
+            <li><a href="#products"><i class="fa-solid fa-chevron-right"></i> Premium Chawara</a></li>
+            <li><a href="#products"><i class="fa-solid fa-chevron-right"></i> Gift Boxes</a></li>
+            <li><a href="#products"><i class="fa-solid fa-chevron-right"></i> Bulk Orders</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Consultancy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4 class="footer-col-title">Stay Updated</h4>
+          <p class="footer-nl-desc">Subscribe to get seasonal offers, farming tips, and harvest updates directly in your
+            inbox.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email…" id="nlEmail" />
+            <button onclick="subscribeNewsletter()">Subscribe</button>
+          </div>
+          <div style="margin-top:24px;">
+            <a href="https://wa.me/92394027665?text=Hello! I want to order dates from Malik Dhakki Dates Nursery" target="_blank" class="btn-whatsapp"
+              style="font-size:0.85rem;padding:12px 20px;">
+              <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Malik Dhakki Dates Nursery & Premium Farms. All rights reserved.</p>
+        <h5
+          style="color: rgb(255, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: lighter; font-style: italic;">
+          Developer<span style="font-weight: bold; color: rgb(255, 255, 255);"> <a
+              href="https://aqeeel-ahmad.github.io/Aqeel_Ahmad-Portfolio/">"Aqeel Ahmad"</a></span></h5>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================
+                  FLOATING WHATSAPP
+              ============================= -->
+  <a href="https://wa.me/923469892120?text=Assalamu Alaikum! I want to order from Malik Dhakki Dates Nursery Farms."
+    target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ============================
+                  CART SIDEBAR
+              ============================= -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <span class="cart-title">Your Cart</span>
+      <button class="cart-close" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span class="cart-total-label">Total Amount</span>
+        <span class="cart-total-price" id="cartTotal">Rs. 0</span>
+      </div>
+      <button class="btn-primary cart-checkout" onclick="checkoutWhatsApp()">
+        <i class="fa-solid fa-bag-shopping"></i> Proceed to Order
+      </button>
+      <a href="#" class="btn-whatsapp cart-wa-order" onclick="checkoutWhatsApp();return false;">
+        <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================
+                  PRODUCT DETAIL MODAL
+              ============================= -->
+  <div class="modal-overlay" id="productModal" onclick="closeModal(event)">
+    <div class="modal-card" id="modalCard">
+      <div class="modal-inner">
+        <div class="modal-img" id="modalImg"></div>
+        <div class="modal-info" id="modalInfo"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+                  TOAST
+              ============================= -->
+  <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i> <span id="toastMsg"></span></div>
+
+</body>
+
+</html>
